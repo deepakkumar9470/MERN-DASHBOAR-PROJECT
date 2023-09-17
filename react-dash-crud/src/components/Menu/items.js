@@ -31,9 +31,9 @@ export const menuItems = [
     {
 
         id: 5,
-        title:  "Profile",
+        title:  "Details",
         icon : "icons/profile.svg",
-        url : "/"
+        url : "view/:id"
     },
     {
 

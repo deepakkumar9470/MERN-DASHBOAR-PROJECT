@@ -15,6 +15,7 @@ const EditTask = () => {
 
     const dispatch = useDispatch();
     const {id} = useParams()
+  
     const navigate = useNavigation()
     const [errors, setErrors] = useState({
       title: "",

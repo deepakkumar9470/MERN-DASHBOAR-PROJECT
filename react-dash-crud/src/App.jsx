@@ -9,6 +9,7 @@ import { useState } from 'react';
 import AddTask from './components/Add/AddTask';
 import EditTask from './components/Edit/EditTask';
 import {Toaster} from 'react-hot-toast'
+import Details from './components/Details/Details';
 const Layout = () =>{
   return (
     <div className="main">
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/edit/:id",
         element : <EditTask/>
+      },
+      {
+        path: "/view/:id",
+        element : <Details/>
       }
 
     ]

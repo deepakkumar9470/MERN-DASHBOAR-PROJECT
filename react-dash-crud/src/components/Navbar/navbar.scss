@@ -1,0 +1,25 @@
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    box-shadow: -7px 9px 4px -10px rgba(0,0,0,0.75);
+    .logoText {
+         
+        
+        img{
+            width: 120px;
+            height: 60px;
+        }
+    }
+    .logo{
+
+        img{
+            width: 40px;
+            height: 40px;
+            color: blue !important;
+            font-weight: 500;
+        }
+    }
+}

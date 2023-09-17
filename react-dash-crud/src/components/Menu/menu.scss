@@ -1,0 +1,47 @@
+@import '../../style/responsive.scss';
+
+
+.menu{
+   border-right: 1px solid #f5f4ee;
+
+    .item{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         margin-bottom: 20px;
+
+         .listItem{
+            max-width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1b1a1a;
+            padding: 15px;
+  
+            &:hover{
+                color: #fff !important;
+                transition: all ease-in 0.3s;
+                background-color: rgb(70, 70, 245);
+            }
+
+         }
+      
+        img{
+          width: 22px;
+          height: 22px;
+          &:hover{
+            color: #fff !important;
+
+          }
+        }
+
+        .listItemTitle{
+            font-size: 14px;
+            font-weight: 500;
+            @include lg{
+                display: none;
+            }
+        }
+    }
+}

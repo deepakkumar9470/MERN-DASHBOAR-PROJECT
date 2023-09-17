@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+@import './style/responsive.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.main{
+
+}
+
+.container{
+    display: flex;
+}
+.menuContainer{
+    width: 250px;
+    pad: 5px 20px;
+    @include lg{
+        width: max-content;
+    }
+}
+
+.mainContainer{
+    width: 100%;
+    pad: 5px 20px;
+    border-right: 2pz solid gray;
+}

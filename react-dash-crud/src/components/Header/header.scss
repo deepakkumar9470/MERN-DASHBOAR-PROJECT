@@ -1,0 +1,76 @@
+@import '../../style/responsive.scss';
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 20px;
+   margin: 10px 20px;
+   box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.1);
+   @include md{
+   width: 100%;
+   }
+    .headText{
+
+      @include md{
+        display: none;
+       }
+        h2{
+           color: #13005A;  
+           
+        }
+    }
+
+    .userWrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          .name{
+            font-size: 16px;
+            font-weight: 500;
+            color: #2C3333;
+            cursor: pointer;
+          } 
+          img{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            border: 1px solid rgb(99, 98, 98);
+          } 
+        }
+    }
+    .bell{
+      @include md{
+        display: none;
+       }
+        position: relative;
+        cursor: pointer;
+        img{
+            width: 32px;
+            height: 32px;
+
+        }
+
+        .count{
+            width: 14px;
+            height: 14px;
+            display: flex;
+            font-size: 10px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            right: -3px;
+            background-color: #f84444;
+            color: white;
+        }
+
+    }
+
+}
